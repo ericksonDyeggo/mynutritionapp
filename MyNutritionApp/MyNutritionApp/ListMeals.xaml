@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Listagem das Refeições"
+             x:Class="MyNutritionApp.ListMeals">
+  <ContentPage.Content>
+    <StackLayout Padding="25">
+      <ListView ItemsSource="{Binding Meals}" ItemTapped="ItemAction">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <ViewCell.View>
+                <StackLayout>
+                  <Label Text="{Binding Description}" FontSize="12" />
+                  <StackLayout Orientation="Horizontal">
+                    <Label Text="Calorias: " FontSize="10" />
+                    <Label Text="{Binding Calories}" FontSize="10" />
+                  </StackLayout>
+                </StackLayout>
+              </ViewCell.View>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
