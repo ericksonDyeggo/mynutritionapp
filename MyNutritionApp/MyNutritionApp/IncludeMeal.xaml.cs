@@ -13,12 +13,10 @@ namespace MyNutritionApp
     public partial class IncludeMeal : ContentPage
     {
 
-        public ObservableCollection<Meal> Meals { get; set; }
         public MealDAO Dao;
 
-        public IncludeMeal(ObservableCollection<Meal> meals, MealDAO dao)
+        public IncludeMeal( MealDAO dao)
         {
-            this.Meals = meals;
             this.Dao = dao;
             InitializeComponent();
         }
@@ -37,9 +35,7 @@ namespace MyNutritionApp
             Double calories = calorieCounter.Value;
 
             Meal meal = new Meal(description, calories);
-
-            Meals.Add(meal);
-
+            
             StringBuilder sb = new StringBuilder();
 
             Dao.Save(meal);

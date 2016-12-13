@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyNutritionApp.Data;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -14,10 +15,13 @@ namespace MyNutritionApp
 
         public ObservableCollection<Meal> Meals { get; set; }
 
-        public ListMeals(ObservableCollection<Meal> Meals)
+        private MealDAO Dao;
+
+        public ListMeals(MealDAO dao)
         {
-            this.Meals = Meals;
             BindingContext = this;
+            Dao = dao;
+            Meals = dao.List;
             InitializeComponent();
         }
 
@@ -29,7 +33,7 @@ namespace MyNutritionApp
 
             if (confirm)
             {
-                Meals.Remove(meal);
+                Dao.Remove(meal);
 
                 await DisplayAlert("Remover item", "Refeição " + meal.Description + " removida com sucesso!", "Ok");
             }

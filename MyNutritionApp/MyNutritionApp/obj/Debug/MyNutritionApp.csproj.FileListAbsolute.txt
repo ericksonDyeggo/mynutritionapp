@@ -17,6 +17,7 @@ D:\VS_Projects\MyNutritionApp\MyNutritionApp\MyNutritionApp\obj\Debug\MyNutritio
 D:\VS_Projects\MyNutritionApp\MyNutritionApp\MyNutritionApp\obj\Debug\MyNutritionApp.ListMeals.xaml.g.cs
 D:\VS_Projects\MyNutritionApp\MyNutritionApp\MyNutritionApp\obj\Debug\MyNutritionApp.dll
 D:\VS_Projects\MyNutritionApp\MyNutritionApp\MyNutritionApp\obj\Debug\MyNutritionApp.pdb
+D:\VS_Projects\MyNutritionApp\MyNutritionApp\MyNutritionApp\obj\Debug\MyNutritionApp.csprojResolveAssemblyReference.cache
 D:\VS_Projects\MyNutritionApp\MyNutritionApp\MyNutritionApp\obj\Debug\MyNutritionApp.dll.mdb
 D:\VS_Projects\MyNutritionApp\MyNutritionApp\MyNutritionApp\bin\Debug\MyNutritionApp.dll.mdb
 D:\VS_Projects\MyNutritionApp\MyNutritionApp\MyNutritionApp\obj\Debug\MyNutritionApp.dll.mdb

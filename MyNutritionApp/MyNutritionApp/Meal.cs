@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SQLite;
+using System;
 
 namespace MyNutritionApp
 {
     public class Meal
     {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
         public String Description { get; set; }
         public Double Calories { get; set; }
 
